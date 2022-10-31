@@ -17,7 +17,7 @@ Selain itu web server juga memiliki fungsi lain yaitu :
 
 ### Cara Kerja Web Server
 
-
+![cara-kerja-web-server](https://user-images.githubusercontent.com/114325558/199008632-791ea946-6a9c-4381-8776-bf3cff30a374.JPG)
 
 Pada saat klien atau browser seperti Safari meminta data kepada web server, permintaan tersebut akan dikemas pada TCP dan dikirimkan ke alamat yang dibutuhkan baik itu HTTP atau HTTPS agar ditampilkan di browser.
 Namun, jika data yang diminta tidak bisa ditemukan, maka web server akan secara otomatis menolak permintaan tersebut. Itulah kenapa kita sering menemukan Page Not Found atau Error 404 saat mengakses informasi atau website melalui internet.
@@ -41,7 +41,7 @@ Jadi, saat pengguna ingin menggunakan fungsi suatu aplikasi, perangkatnya akan m
 
 &nbsp;
 
-### Day-2
+## Day-2
 ### Intro & Essential Node JS
 ### 1. Pengenalan Node Js
 Node.js adalah runtime environment untuk JavaScript yang bersifat open-source dan cross-platform. Dengan Node.js kita dapat menjalankan kode JavaScript di mana pun, tidak hanya terbatas pada lingkungan browser. Dengan adanya Node.js, JavaScript menjadi bahasa multiplatform yang banyak menggiring developer untuk menggunakannya. JavaScript menjadi salah satu pilihan tepat dalam membangun web server bukan hanya dari sisi Front-End tetapi juga dari sisi Back-End. Node.js juga menyediakan banyak library/module JavaScript yang membantu menyederhanakan pengembangan aplikasi web.
@@ -65,17 +65,23 @@ Node.js adalah runtime environment untuk JavaScript yang bersifat open-source da
 
 ### 4. Membuat Web Server Dengan Node Js
 - Node Js Web Server
+
+![menambahkan-http-header](https://user-images.githubusercontent.com/114325558/199010227-975e8bb4-f529-45fc-bb85-d993aae2c4fd.JPG)
+
   - Untuk menggunakan modul HTTP, gunakan require().
   - Gunakan method createServer() untuk membuat server HTTP.
   - Callback function yang digunakan pada method http.createServer(), akan dijalankan ketika seseorang mencoba mengakses komputer pada port 8080.
 
 - Membaca Query String
+
+![membaca query string](https://user-images.githubusercontent.com/114325558/199010404-b201c510-7a36-43b7-a4a7-af970b8cfa82.JPG)
+
   - Callback function pada method http.createServer() memiliki argumen req yang mewakili request dari klien, sebagai objek (objek http.IncomingMessage).
   - Objek ini memiliki sebuah properti yang disebut "url" yang menyimpan informasi url yang sedang mengakses.
 
 &nbsp;
 
-### Day-3
+## Day-3
 ### Express Js
 ### 1. Pengenalan Express Js
 Express.js adalah framework web app untuk Node.js yang ditulis dengan bahasa pemrograman JavaScript. Framework open source ini dibuat oleh TJ Holowaychuk pada tahun 2010. Express.js adalah framework back end. Artinya, ia bertanggung jawab untuk mengatur fungsionalitas website, seperti pengelolaan routing dan session, permintaan HTTP, penanganan error, serta pertukaran data di server.  Express Js memiliki arsitektur MVC (Model View Controller). Dengan begitu, setiap data diolah pada Model, dihubungkan melalui Controller, lalu ditampilkan menjadi informasi melalui View. Express.js di JavaScript adalah framework yang menggunakan pendekatan Unopinionated dalam proses pengembangan. Artinya, pengguna punya kebebasan dalam menentukan metode yang akan digunakan untuk mengeksekusi suatu perintah.
@@ -84,18 +90,96 @@ Express.js adalah framework web app untuk Node.js yang ditulis dengan bahasa pem
 Back end app adalah aplikasi yang berjalan di server-side yang bekerja untuk memberikan informasi berupa data sesuai request dari client / browser / front end app. Umumnya server-side app membuat REST API. Kelebihan dari framework ini terletak pada fitur caching, support dengan Google V8 Engine, JavaScript, serta didukung oleh komunitas dan skalabilitas aplikasi yang baik.
 
 ### 3. Routing
+
+![routing](https://user-images.githubusercontent.com/114325558/199008794-356c2683-df8c-4583-bac6-d6f8fdd1d92e.JPG)
+
 Routing adalah metode yang digunakan website (server) untuk merespons permintaan dari browser (client). Misalnya, permintaan untuk menampilkan halaman tertentu. 
 Cara kerja routing di Express.js adalah dengan sebuah metode bernama app. Metode tersebut akan merespons setiap permintaan berbentuk HTTP. Misalnya GET, POST, PUT, dan DELETE.
 
 ### 4. Middleware
+
+![middleware](https://user-images.githubusercontent.com/114325558/199008860-8ab894b4-5c02-479a-8a16-44943b42c82a.JPG)
+
 Middleware adalah fungsi yang digunakan untuk mengakses permintaan object (req), respons object (res), dan setiap siklus permintaan dan respon tersebut (next).
 Pada Express.js, cara kerja Middleware adalah dengan mengeksekusi setiap skrip, membuat perubahan terhadap permintaan dan respons object, mengakhiri siklus permintaan-respons, lalu menyiapkan Middleware untuk siklus berikutnya.
 Berikut adalah skrip Middleware sederhana pada website Hello World:
 
 &nbsp;
 
-### Day-4
-### Design Database With MySQL
+## Day-4
+### Design Database With MySQL : "Entity & attributes"
+### 1. Entity 
+Entitas adalah obyek yang mewakili sesuatu dalam dunia nyata dan dapat dibedakan antara satu dengan lainnya (unique).Setiap entitas memiliki beberapa atribut yang mendeskripsikan karakteristik dari objek. Entitas dapat berupa:
+- Data Fisik (seperti mobil, rumah, manusia, pegawai, peserta diklat.
+- Abstrak atau konsep (seperti department, pekerjaan, mata pelajaran)
+- Kejadian (pembelian, penjualan, peminjaman, dll)
+Entitas dapat dibedakan menjadi dua macam yaitu Entitas kuat dan entitas lemah. Entitas lemah adalah yang keberadaannya tergantung pada entitas lain. Gambar dibawah ini menjelaskan notasi umum entitas kuat dengan nama entitas pegawai dan entitas lemah dengan nama entitas tanggungan. 
 
-### Day-5
-### Design Database With MySQL
+### 2. Atribute
+Attribute merupakan karakteristik dari entitas atau relationship, yang menyediakan penjelasan detail tentang entitas atau relationship. Dalam penerapannya (level fisik) atribut merupakan field atau kolom dari sebuah tabel. Misalnya entitas mahasiswa memiliki atribute nama, alamat, NIM. Berdasarkan karakteristik atau sifatnya, atribut dapat dikelompokkan menjadi;
+- #### Simple attribute dan composite attribute. 
+Simple Attribute atau atomic attribute adalah attribut terkecil yang tidak dapat dibagi-bagi lagi menjadi atribut yang lebih kecil. Contohnya adalah atribut JenisKel pada entitas pegawai.
+Sedangkan, composite attribute adalah atribut yang dapat dibagi menjadi atribut yang lebih kecil. Attribut ini dapat diartikan attribute atomic yang menggambarkan atribut dasar dengan suatu arti tertentu.
+Contoh: atribut Nama pada entitas pegawai dapat dipecah menjadi atribut NmDepan, Inisial dan NmBlk.
+
+- #### Single valued attribute dan multi valued attribute
+Single value Attribute adalah suatu atribut yang hanya mempunyai satu nilai. Misalnya atribut NmDepan pada entitas pegawai. NmDepan seorang pegawai selalu bernilai satu nilai, tidak mungkin lebih dari satu.
+Sedangkan, multi Value attribute adalah atribut yang dapat memiliki lebih dari satu nilai yang jenisnya sama dari sebuah data tunggal. Misalnya atribut lokasi pada entitas departemen dapat berisi 2 nilai atau lebih seperti Surabaya atau Jakarta. Gambar diatas menjelaskan simbol atau notasi Multi Value attribute. 
+
+- ### Mandatory attribute
+Mandatory Attribute adalah merupakan sejumlah atribut yang ada pada suatu table yang harus berisi data dan tidak boleh kosong.
+
+- ### Derived attribute (attribut turunan) dan key attribute.
+Derived Attribute atau Atribut Turunan adalah atribut yang nilai- nilainya diperoleh dari pengolahan atau dapat diturunkan dari atribut atau tabel lain yang berhubungan. Misalnya atribut JmlPegawai pada entitas Departemen.
+Sedangkan, key attribute adalah satu atau beberapa atribut yang mempunyai nilai unik sehingga dapat digunakan
+untuk membedakan data pada suatu baris/record dengan baris lain pada suatu entitas. Key attribute dibedakan menjadi tiga yaitu:
+- Superkey 
+- Candidat Key
+- Primary key
+
+
+## Day-5
+### Design Database With MySQL : "Relasi & Query"
+### 1. Relasi pada Database
+Ada beberapa jenis relasi database yaitu :
+- Relasi One to One
+One to one adalah sebuah relasi dimana satu baris data dari sebuah tabel (Tabel A) hanya terhubung dengan satu baris data di tabel lain (Tabel B).
+One to one menjadi salah satu dari bentuk kemungkinan yang bisa terjadi dalam hubungan antar tabel di database. one to one sebetulnya salah satu hubungan antar tabel yang jarang digunakan. Hal ini dikarenakan ada kecendrungan entitas tabel B dapat disatukan dengan menjadikannya sebagai atribut tabel A.
+Notasi one to one sebagai berikut :
+
+![notasi one to one](https://user-images.githubusercontent.com/114325558/199009119-3fdcc09e-97d9-43c8-8909-676eae901ec0.JPG)
+
+Contoh relasi one to one sebagai berikut :
+
+![contoh2 one to one](https://user-images.githubusercontent.com/114325558/199009180-f7365f2d-e547-4b3f-89c4-e60b76953644.JPG)
+
+- Relasi One to Many
+
+![one to many](https://user-images.githubusercontent.com/114325558/199009252-60e956e9-e162-4d23-bd4e-42e7a886082a.JPG)
+
+Relasi One to Many adalah relasi dimana suatu baris di table A memiliki relasi di beberapa baris di table B.
+
+- Relasi Many to Many
+
+![many to many](https://user-images.githubusercontent.com/114325558/199009349-48b1d94e-94fd-4abe-9abc-43582dce5d95.JPG)
+
+Relasi Many to Many adalah relasi dimana setiap lebih dari satu baris data dari tabel A berhubungan dengan lebih dari satu baris data pada tabel B. Artinya, kedua tabel masing-masing dapat mengakses banyak data dari tabel yang direlasikan. Maka dari itu, relasi Many to Many butuh tabel C sebagai perantara tabel A dan tabel B
+
+### 2. Query Database
+Query adalah syntax atau perintah yang memiliki fungsi untuk mengakses dan menampilkan data pada sistem database. Berikut 4 contoh query pada database :
+- create database : digunakan untuk membuat database baru.
+
+![create database](https://user-images.githubusercontent.com/114325558/199009412-4d6e32ef-cd1e-4225-b50e-95d6d3ff016a.JPG)
+
+- create table : digunakan untuk membuat tabel data baru dalam sebuah database.
+
+![create table](https://user-images.githubusercontent.com/114325558/199009449-1079e116-777d-4fe5-8f06-f3d150c39f23.JPG)
+
+- select : digunakan untuk memilih data dari table database.
+
+![select](https://user-images.githubusercontent.com/114325558/199009482-67c3cbaa-2708-48a1-aca1-e3065f2b752c.JPG)
+
+- Where : digunakan untuk memfilter data pada perintah Select.
+
+![where](https://user-images.githubusercontent.com/114325558/199009534-9321dc7c-3452-4ba0-89fd-f9d5f60fdfb0.JPG)
+
