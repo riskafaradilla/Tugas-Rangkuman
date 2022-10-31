@@ -137,6 +137,7 @@ untuk membedakan data pada suatu baris/record dengan baris lain pada suatu entit
 - Candidat Key
 - Primary key
 
+&nbsp;
 
 ## Day-5
 ### Design Database With MySQL : "Relasi & Query"
