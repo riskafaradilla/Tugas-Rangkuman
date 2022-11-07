@@ -92,7 +92,38 @@ adalah sebuah atribut atau gabungan atribut yang terdapat dalam suatu tabel yang
 ![select](https://user-images.githubusercontent.com/114325558/200259272-9e3bf7d5-fc08-45a5-ba10-5b3e8c96d20f.JPG)
 
 ## Day -7
-### Mysql (Lanjutan)
+### MYSQL (Lanjutan)
+- Inner join
+
+![inner-joint](https://user-images.githubusercontent.com/114325558/200265656-ec0a3c73-99d1-44e2-8ad7-cae52e265a6b.JPG)
+
+- Left Join
+
+![left-join](https://user-images.githubusercontent.com/114325558/200265711-a1f41745-90f9-491c-8b1c-f33c62027090.JPG)
+
+- Right Join
+
+![right-join](https://user-images.githubusercontent.com/114325558/200265761-747f83f3-0c10-40d9-bf45-320d11e17d1b.JPG)
+
+- Sum
+
+![sum](https://user-images.githubusercontent.com/114325558/200266301-4982de03-6c0b-4b62-ad6c-3e07653970c0.JPG)
+
+- Count
+
+![count](https://user-images.githubusercontent.com/114325558/200266380-075853ce-1b55-4f69-9547-2a6edc745a37.JPG)
+
+- Average
+
+![average](https://user-images.githubusercontent.com/114325558/200266426-b8faa39c-03fc-4d5d-9400-d296e3012830.JPG)
+
+- Max
+
+![max](https://user-images.githubusercontent.com/114325558/200266516-7c3b9f24-f39c-4a4b-abe5-6ceafd12367c.JPG)
+
+- Min
+
+![min](https://user-images.githubusercontent.com/114325558/200266881-8da00b05-4de0-48af-abac-86d08f6e0935.JPG)
 
 ## Day -8
 ### Authentication & Authorization
