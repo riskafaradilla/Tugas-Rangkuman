@@ -91,6 +91,8 @@ adalah sebuah atribut atau gabungan atribut yang terdapat dalam suatu tabel yang
 
 ![select](https://user-images.githubusercontent.com/114325558/200259272-9e3bf7d5-fc08-45a5-ba10-5b3e8c96d20f.JPG)
 
+&nbsp;
+
 ## Day -7
 ### MYSQL (Lanjutan)
 - Inner join
@@ -125,6 +127,8 @@ adalah sebuah atribut atau gabungan atribut yang terdapat dalam suatu tabel yang
 
 ![min](https://user-images.githubusercontent.com/114325558/200266881-8da00b05-4de0-48af-abac-86d08f6e0935.JPG)
 
+&nbsp;
+
 ## Day -8
 ### Authentication & Authorization
 ### 1. Pengertian Authentication & Authorization
@@ -138,10 +142,12 @@ password, kemudian sistem mengenalinya dan user mendapatkan akses atau ditolak t
 JSON Web Token, yang berarti token ini menggunakan JSON (Javascript Object Notation) berbentuk string panjang yang sangat random, lalu token ini memungkinkan kita 
 untuk mengirimkan data yang dapat diverifikasi oleh dua pihak atau lebih. Cara kerjanya yaitu seperti password jadi ketika users berhasil melakukan Login maka server 
 akan memberikan sebuah Token. Nanti Token tersebut akan disimpan oleh users pada Local Storage atau Cookies Browser dan bila users ingin mengakses halaman halaman 
-tertentu maka harus menyertakan token tersebut. Untuk itu users akan mengirim balik token yang dikasih diawal tadi sebagai bukti bila user ini, sudah melakukan login.
-Token ini terdiri dari Header, Content, dan Signature.
+tertentu maka harus menyertakan token tersebut. Untuk itu users akan mengirim balik token yang dikasih diawal tadi sebagai bukti bila user ini, sudah melakukan login. Token ini terdiri dari Header, Content, dan Signature.
+- instalasi json web token
 
-### 3. Penerapan Pada Project Express
+![instalasi json-web-token](https://user-images.githubusercontent.com/114325558/200269420-d239efed-2ca9-4020-b50c-fb7646f722e7.JPG)
+
+&nbsp; 
 
 ## Day -9
 ### Sequelize
