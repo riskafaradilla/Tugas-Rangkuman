@@ -64,10 +64,32 @@ adalah sebuah atribut atau gabungan atribut yang terdapat dalam suatu tabel yang
 
 ### 2. Perintah dalam SQL
 - Create database
+
+![create db](https://user-images.githubusercontent.com/114325558/200258003-838d8b59-25e5-4678-8575-162a6525dbd8.JPG)
+
 - Use Database
+
+![use db](https://user-images.githubusercontent.com/114325558/200258045-886d9338-d60e-45d2-a48c-cc5e2e31b814.JPG)
+
 - Create table
-- Insert into
+
+![create table](https://user-images.githubusercontent.com/114325558/200258138-c1689b92-b871-42f5-8cc3-2740f08f7e88.JPG)
+
+- drop
+
+![drop](https://user-images.githubusercontent.com/114325558/200258285-99ec8790-ffa3-4f61-9c20-f65fee1a7998.JPG)
+
+- show table
+
+![show table](https://user-images.githubusercontent.com/114325558/200258421-8f0d8378-c61e-4270-aee6-d7ae80a201b7.JPG)
+
+- Insert
+
+![insert](https://user-images.githubusercontent.com/114325558/200258791-2ad041f2-77d1-4482-b5a8-296684b3fbba.JPG)
+
 - Select
+
+![select](https://user-images.githubusercontent.com/114325558/200259272-9e3bf7d5-fc08-45a5-ba10-5b3e8c96d20f.JPG)
 
 ## Day -7
 ### Mysql (Lanjutan)
