@@ -65,11 +65,11 @@ adalah sebuah atribut atau gabungan atribut yang terdapat dalam suatu tabel yang
 ### 2. Perintah dalam SQL
 - Create database
 
-![create db](https://user-images.githubusercontent.com/114325558/200258003-838d8b59-25e5-4678-8575-162a6525dbd8.JPG)
+![new create db](https://user-images.githubusercontent.com/114325558/200259740-a0e6914d-3cc3-4634-b2a0-74cff063c3f9.JPG)
 
 - Use Database
 
-![use db](https://user-images.githubusercontent.com/114325558/200258045-886d9338-d60e-45d2-a48c-cc5e2e31b814.JPG)
+![new use](https://user-images.githubusercontent.com/114325558/200259864-8a2cb6d7-749d-4e77-9623-bdbabaa88e98.JPG)
 
 - Create table
 
