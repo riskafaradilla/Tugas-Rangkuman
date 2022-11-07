@@ -1,4 +1,4 @@
-## Rangkuman Minggu Ke-2 Back_End Web Development
+## Rangkuman Minggu Ke 2 Back-End Web Development
 ## Day-6
 ### Database & Mysql
 ### A. Database
