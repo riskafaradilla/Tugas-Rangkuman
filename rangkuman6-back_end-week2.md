@@ -64,12 +64,15 @@ adalah sebuah atribut atau gabungan atribut yang terdapat dalam suatu tabel yang
 
 ### 2. Perintah dalam SQL
 - Create database
+
 ![new create db](https://user-images.githubusercontent.com/114325558/200259740-a0e6914d-3cc3-4634-b2a0-74cff063c3f9.JPG)
 
 - Use Database
+
 ![new use](https://user-images.githubusercontent.com/114325558/200259864-8a2cb6d7-749d-4e77-9623-bdbabaa88e98.JPG)
 
 - Create table
+
 ![create table](https://user-images.githubusercontent.com/114325558/200258138-c1689b92-b871-42f5-8cc3-2740f08f7e88.JPG)
 
 - drop
