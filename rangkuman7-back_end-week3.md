@@ -1,6 +1,6 @@
 ## Rangkuman Minggu Ke 3 Back-End
 ## Day -10
-### Sequelize
+## Sequelize
 ### 1. Pengertian Sequelize
 Sequelize adalah ORM (Object Relational Mapping) Node JS yang berbasis promise. Sequelize mendukung sebagian besar relational Database seperti MySQL, PostgresQL, 
 MariaDB, SQLite dan Miscrosoft SQL Server. Dengan fitur fitur di Sequelize, kita bisa mengelola dan mengatur data di database kita dengan cepat, dan efisien.
@@ -145,6 +145,7 @@ Jika hasil tampilannya seperti berikut, berarti database MongoDB sudah aktif dan
 
 ![hapus collection](https://user-images.githubusercontent.com/114325558/201642349-c5fdab4d-5302-460a-8f75-f30dfb731c92.JPG)
 
+## Day -12
 ## Mongoose
 ### 1. Pengenalan Monggose
 Mongoose adalah sebuah Object Document Mapper (ODM). Ini berarti Mongoose mengizinkan kita untuk mendefinisikan obyek dengan skema yang benar-benar diketik yang dipetakan ke sebuah dokumen MongoDB.Mongoose adalah pustaka JavaScript yang memungkinkan Anda menentukan skema dengan data yang strongly-typed.  Setelah skema didefinisikan, Mongoose memungkinkan Anda membuat Model berdasarkan skema tertentu. Model Mongoose kemudian dipetakan ke Dokumen MongoDB melalui definisi skema Model.Setelah menentukan skema dan model, Mongoose berisi banyak fungsi berbeda yang memungkinkan kita untuk memvalidasi, menyimpan, menghapus, dan men-query data menggunakan fungsi MongoDB yang umum. Mongoose menyediakan jumlah fungsionalitas yang luar biasa yang berkaitan dengan pembuatan dan pengerjaan skema. Mongoose saat ini memiliki delapan tipe skema dimana propertinya disimpan seperti saat berada di MongoDB. Diantaranya:
@@ -216,6 +217,29 @@ Membuat koneksi dengan menggunakan MongoDB database, yang diletakkan di .env :
 
 ![simple crud 6](https://user-images.githubusercontent.com/114325558/201648858-e9482868-6399-436b-80fc-4806252cee3f.JPG)
 
+## Day -13
+## Docker
+### 1. Pengenalan Dokker
+Docker adalah layanan yang menyediakan kemampuan untuk mengemas dan menjalankan sebuah aplikasi dalam sebuah lingkungan terisolasi yang disebut dengan container. Dengan adanya isolasi dan keamanan yang memadai memungkinkan kamu untuk menjalankan banyak container di waktu yang bersamaan pada host tertentu.
+Docker ini diperkenalkan pada tahun 2013 oleh Solomon Hykes pada acara PyCon. Beberapa bulan setelahnya docker secara resmi diluncurkan, tepatnya pada tahun 2014. Semenjak itu docker menjadi sangat populer di kalangan developer luar negeri.
+Fitur-fitur yang terdapat pada dokker yaitu :
+- Docker engine
+- Docker Hub
+- Docker Compose
+- Docker for Mac
+- Docker for Linux
+- Docker for Windows
+
+### 2. Mengapa Menggunakan Dokker ?
+Dalam pengembangan aplikasi, developer memerlukan virtualisasi di server agar aplikasi bisa berjalan di berbagai platform dengan konfigurasi hardware yang berbeda-beda. Sayangnya, ketika menggunakan virtualisasi harus menyiapkan satu sistem operasi secara penuh. Jika membutuhkan beberapa virtualisasi, server perlu resource yang besar. Nah, container bisa digunakan sebagai alternatif virtualisasi sehingga tidak perlu menyiapkan sistem operasi secara penuh. Dengan container, ukuran file menjadi lebih kecil dibandingkan virtualisasi yang biasa digunakan.
+Kelebihan penggunaan dokker yaitu :
+- Memiliki konfigurasi yang sederhana.
+- Tingkat keamanan yang baik.
+- Dapat dijalankan pada beberapa platform cloud.
+- Dapat melakukan debugging.
+- Dapat digunakan pada berbagai sistem operasi.
+
+### 3. 
 
 
 
