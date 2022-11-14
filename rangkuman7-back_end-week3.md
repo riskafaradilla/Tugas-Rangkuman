@@ -146,7 +146,81 @@ Jika hasil tampilannya seperti berikut, berarti database MongoDB sudah aktif dan
 ![hapus collection](https://user-images.githubusercontent.com/114325558/201642349-c5fdab4d-5302-460a-8f75-f30dfb731c92.JPG)
 
 ## Mongoose
-## Pengenalan 
+### 1. Pengenalan Monggose
+Mongoose adalah sebuah Object Document Mapper (ODM). Ini berarti Mongoose mengizinkan kita untuk mendefinisikan obyek dengan skema yang benar-benar diketik yang dipetakan ke sebuah dokumen MongoDB.Mongoose adalah pustaka JavaScript yang memungkinkan Anda menentukan skema dengan data yang strongly-typed.  Setelah skema didefinisikan, Mongoose memungkinkan Anda membuat Model berdasarkan skema tertentu. Model Mongoose kemudian dipetakan ke Dokumen MongoDB melalui definisi skema Model.Setelah menentukan skema dan model, Mongoose berisi banyak fungsi berbeda yang memungkinkan kita untuk memvalidasi, menyimpan, menghapus, dan men-query data menggunakan fungsi MongoDB yang umum. Mongoose menyediakan jumlah fungsionalitas yang luar biasa yang berkaitan dengan pembuatan dan pengerjaan skema. Mongoose saat ini memiliki delapan tipe skema dimana propertinya disimpan seperti saat berada di MongoDB. Diantaranya:
+- String
+- Number
+- Date
+- Buffer
+- Boolean
+- Mixed
+- ObjectId
+- Array
+
+Setiap tipe data memungkinkan kita untuk menentukan:
+- Sebuah nilai default
+- Sebuah fungsi validasi custom
+- Menunjukan field yang dibutuhkan
+- Fungsi get yang memungkinkan Anda untuk memanipulasi data sebelum dikembalikan sebagai obyek
+- Sebuah set fungsi yang memungkinkan Anda untuk memanipulasi data sebelum disimpan ke database
+- Membuat indeks yang memungkinkan data agar ditarik secara lebih cepat
+
+### 2. Instalasi Mongoose
+Untuk melakukan instalasi pada Mongoose menggunakan perintah :
+
+![install mongose](https://user-images.githubusercontent.com/114325558/201644563-87d2e030-42b7-45a8-9aee-dac66293a6b4.JPG)
+
+### 3. Membuat Connection
+
+![create connection 1](https://user-images.githubusercontent.com/114325558/201644898-bd0d042f-7661-41c8-86a9-1f2ff7b8c544.JPG)
+
+Membuat koneksi dengan menggunakan MongoDB database, yang diletakkan di .env :
+
+![create connection 2](https://user-images.githubusercontent.com/114325558/201645160-8364e79d-ec4e-45d5-a227-38926aa30eea.JPG)
+
+### 4. Membuat Schema
+- Definisikan Skema, dan tipe data untuk setiap field yang akan digunakan.
+
+![define schema 1](https://user-images.githubusercontent.com/114325558/201645858-536586de-ea51-4738-9fd1-1d35767e67cd.JPG)
+
+- membuat validasi data, misal untuk field yang wajib diisi.
+
+![define schema 2](https://user-images.githubusercontent.com/114325558/201646133-8e01e627-d36a-4a00-b121-c54c2383c804.JPG)
+
+- Membuat model users dari schema yang telah kita buat untuk melakukan pengolahan data, atau operasi CRUD.
+
+![define schema 3](https://user-images.githubusercontent.com/114325558/201646408-ee6a36c2-9c1f-4347-b93b-ca0eb9143654.JPG)
+
+### 5. Membuat Simple Crud
+- Sebelum membuat operasi CRUD,terlebih dahulu menginstall express untuk routing dan body-parser.
+
+![simple crud1](https://user-images.githubusercontent.com/114325558/201647186-abd66f24-d6d2-4d74-bbfe-d6ab96a985ab.JPG)
+
+- Kita bisa menggunakan fungsi find() untuk menampilkan keseluruhan data.
+
+![simple crud 2](https://user-images.githubusercontent.com/114325558/201647533-6ecfb39c-a887-4d36-a1d2-98e06d4a3bfd.JPG)
+
+- Kita bisa menggunakan method POST untuk mendaftarkan user, apabila data sudah ada maka akan menampilkan pesan error.
+
+![simple crud 3](https://user-images.githubusercontent.com/114325558/201647902-d5c3ee83-59d2-4368-92f0-4d74a7791099.JPG)
+
+- Mendapatkan data user berdasarkan id.
+
+![simple crud 4](https://user-images.githubusercontent.com/114325558/201648336-a79df1cd-b992-4636-983f-46bc716c2df8.JPG)
+
+- Menghapus satu data berdasarkan id.
+
+![simple crud 5](https://user-images.githubusercontent.com/114325558/201648578-593c26a5-7a06-4782-bba4-6f55d281b508.JPG)
+
+- Mengapdate data berdasarkan id.
+
+![simple crud 6](https://user-images.githubusercontent.com/114325558/201648858-e9482868-6399-436b-80fc-4806252cee3f.JPG)
+
+
+
+
+
+
 
 
 
