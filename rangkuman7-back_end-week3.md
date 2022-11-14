@@ -262,6 +262,12 @@ Dockerfile adalah file teks yang berisi semua perintah yang bisa dijalankan user
 
 ![dokker file 1](https://user-images.githubusercontent.com/114325558/201656089-789ad9c9-0fad-485e-8a87-6c0d37d16e48.JPG)
 
+### 6. Dokker Compose 
+Docker-Compose adalah alat untuk mendefinisikan dan menjalankan satu atau beberapa container yang saling terkait dengan sebuah command. Pada implementasinya kita dapat menggunakannya dengan membuat sebuah file berekstensi yaml/yml yang di dalamnya terdapat konfigurasi-konfigurasi terhadap service aplikasi yang akan dijalankan. Gambaran sederhananya seperti menyatukan semua Dockerfile dari setiap service aplikasi ke dalam sebuah file yaml (docker-compose file), dan selanjutnya dengan sebuah command, kita bisa meng-create dan men-start semua service yang telah didefinisikan pada file yml tersebut. script konfigurasi nya juga sangat mudah dan mirip dengan argumen-argumen saat kita ingin menjalankan sebuah Dockerfile. Kita bisa menggunakannya di semua lingkungan kerja : production, staging, development, dan testing.
+- Proses Dasar Penggunaan Docker-Compose yaitu :
+  - Mendefinisikan environment aplikasi dengan membuat Dockerfile sehingga bisa digunakan kembali dimana saja.
+  - Mendefinisikan service lainnya (termasuk aplikasi kita) di dalam docker-compose.yml sehingga semuanya bisa berjalan bersamaan dalam environment yang terisolasi.
+  - Jalankan command docker compose yaitu : docker-compose build dan docker-compose up melalui command prompt/shell (pastikan anda berada pada path yang sama dengan posisi file docker-compose.yml).
 
 
 
