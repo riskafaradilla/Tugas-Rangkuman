@@ -50,7 +50,7 @@ MariaDB, SQLite dan Miscrosoft SQL Server. Dengan fitur fitur di Sequelize, kita
 
 ## Day -11
 ## MongoDB
-## 1. pengenalan MongoDB
+### 1. pengenalan MongoDB
 MongoDB adalah salah satu jenis database NoSQL yang cukup populer digunakan dalam pengembangan website. NoSQL sendiri adalah singkatan dari Not Only SQL. Artinya kita bisa mengolah database dengan fleksibel dan tidak membutuhkan Query. Berbeda dengan database jenis SQL yang menyimpan data menggunakan relasi tabel, MongoDB menggunakan dokumen dengan format JSON. 
 
 ![ilustrasi mongodb](https://user-images.githubusercontent.com/114325558/201625530-017d3a54-1dfb-452b-82ba-f3f6a1284a58.JPG)
@@ -75,7 +75,7 @@ Sedangkan kekurangan menggunakan MongoDB yaitu :
 - Menggunakan banyak memory.
 - Hanya bisa menampung maksimal 16MB disetiap document.
 
-2. Instalasi MongoDB
+### 2. Instalasi MongoDB
 - Perintah instalasi 
 
 ![instalasi mongodb](https://user-images.githubusercontent.com/114325558/201628813-cb40501f-ddcb-4e2a-a4ea-3aeee721bf58.JPG)
@@ -96,7 +96,7 @@ Jika hasil tampilannya seperti berikut, berarti database MongoDB sudah aktif dan
 
 ![tampilan status mongodb](https://user-images.githubusercontent.com/114325558/201630024-14c2a49f-bc7f-439e-a5ce-3f55a5408750.JPG)
 
-3. Perintah Dasar Pada MongoDB
+### 3. Perintah Dasar Pada MongoDB
 - Masuk ke database MongoDB
 
 ![masuk ke mongodb](https://user-images.githubusercontent.com/114325558/201631332-388e8343-be24-46b1-80fe-6c41789df517.JPG)
@@ -147,7 +147,7 @@ Jika hasil tampilannya seperti berikut, berarti database MongoDB sudah aktif dan
 
 ## Day -12
 ## Mongoose
-### 1. Pengenalan Monggose
+### 1. Pengenalan Mongoose
 Mongoose adalah sebuah Object Document Mapper (ODM). Ini berarti Mongoose mengizinkan kita untuk mendefinisikan obyek dengan skema yang benar-benar diketik yang dipetakan ke sebuah dokumen MongoDB.Mongoose adalah pustaka JavaScript yang memungkinkan Anda menentukan skema dengan data yang strongly-typed.  Setelah skema didefinisikan, Mongoose memungkinkan Anda membuat Model berdasarkan skema tertentu. Model Mongoose kemudian dipetakan ke Dokumen MongoDB melalui definisi skema Model.Setelah menentukan skema dan model, Mongoose berisi banyak fungsi berbeda yang memungkinkan kita untuk memvalidasi, menyimpan, menghapus, dan men-query data menggunakan fungsi MongoDB yang umum. Mongoose menyediakan jumlah fungsionalitas yang luar biasa yang berkaitan dengan pembuatan dan pengerjaan skema. Mongoose saat ini memiliki delapan tipe skema dimana propertinya disimpan seperti saat berada di MongoDB. Diantaranya:
 - String
 - Number
@@ -239,10 +239,28 @@ Kelebihan penggunaan dokker yaitu :
 - Dapat melakukan debugging.
 - Dapat digunakan pada berbagai sistem operasi.
 
-### 3. 
+### 3. Konsep Container Pada Dokker
+Dalam penggunaan Docker, Container adalah sebuah lingkungan khusus yang dibuat untuk instance Docker image. Menjalankan sebuah Image akan menghasilkan satu Docker container.
+Image menyediakan template yang bisa digunakan dalam pembuatan container. Image mungkin berisi informasi yang dibutuhkan untuk membuat container, dan bisa disimpan di komputer atau secara remote.
 
+### 4. Perintah Dasar Pada Dokker
+- Dokker pull
 
+![dokker pull](https://user-images.githubusercontent.com/114325558/201654681-2ceefda9-b2dc-4fa4-beee-095eedd6f30c.JPG)
 
+- Docker images
+
+![dokker images](https://user-images.githubusercontent.com/114325558/201655130-19fc0980-d7d8-4269-bb30-6e9395a751ec.JPG)
+
+- Dokker run
+
+![dokker run](https://user-images.githubusercontent.com/114325558/201654942-298d9447-97a4-4d55-b467-6c45b9132a34.JPG)
+
+### 5. Dokker File
+Dockerfile adalah file teks yang berisi semua perintah yang bisa dijalankan user pada baris perintah untuk membuat image. Ini mencakup semua instruksi yang diperlukan oleh docker untuk membangun image.
+- Membuat dokker file
+
+![dokker file 1](https://user-images.githubusercontent.com/114325558/201656089-789ad9c9-0fad-485e-8a87-6c0d37d16e48.JPG)
 
 
 
