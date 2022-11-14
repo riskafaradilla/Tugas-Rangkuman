@@ -48,6 +48,8 @@ MariaDB, SQLite dan Miscrosoft SQL Server. Dengan fitur fitur di Sequelize, kita
 
 ![update-todo-by-id](https://user-images.githubusercontent.com/114325558/200264587-f9b2e24e-aeea-4f11-a1d0-1f5bee09bb14.JPG)
 
+&nbsp;
+
 ## Day -11
 ## MongoDB
 ### 1. pengenalan MongoDB
@@ -145,6 +147,8 @@ Jika hasil tampilannya seperti berikut, berarti database MongoDB sudah aktif dan
 
 ![hapus collection](https://user-images.githubusercontent.com/114325558/201642349-c5fdab4d-5302-460a-8f75-f30dfb731c92.JPG)
 
+&nbsp;
+
 ## Day -12
 ## Mongoose
 ### 1. Pengenalan Mongoose
@@ -217,6 +221,8 @@ Membuat koneksi dengan menggunakan MongoDB database, yang diletakkan di .env :
 
 ![simple crud 6](https://user-images.githubusercontent.com/114325558/201648858-e9482868-6399-436b-80fc-4806252cee3f.JPG)
 
+&nbsp; 
+
 ## Day -13
 ## Docker
 ### 1. Pengenalan Dokker
@@ -268,7 +274,3 @@ Docker-Compose adalah alat untuk mendefinisikan dan menjalankan satu atau bebera
   - Mendefinisikan environment aplikasi dengan membuat Dockerfile sehingga bisa digunakan kembali dimana saja.
   - Mendefinisikan service lainnya (termasuk aplikasi kita) di dalam docker-compose.yml sehingga semuanya bisa berjalan bersamaan dalam environment yang terisolasi.
   - Jalankan command docker compose yaitu : docker-compose build dan docker-compose up melalui command prompt/shell (pastikan anda berada pada path yang sama dengan posisi file docker-compose.yml).
-
-
-
-
